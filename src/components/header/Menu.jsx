@@ -4,8 +4,6 @@ import { menuText, keywordText } from '../../data/header'
 
 const Menu = () => {
     const location = useLocation();
-    console.log(location.pathname);
-
 
     return (
         <nav className='header__menu'>

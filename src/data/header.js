@@ -14,7 +14,7 @@ export const menuText = [
         src: "/"
     },
     {
-        title: "오늘의 추천 곡",
+        title: "오늘의 추천 영상",
         icon: <SlFire />,
         src: "/today"
     },
