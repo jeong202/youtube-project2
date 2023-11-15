@@ -1,0 +1,109 @@
+h2 {
+    margin-bottom: 10px;
+}
+
+.video__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+
+    .video {
+        margin-bottom: 50px;
+        border: 1px solid var(--white100);
+        padding: 16px;
+
+        .video__thumb {
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .video__info {
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                @include line(2)
+            }
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                @include line(2)
+            }
+        }
+    }
+}
+
+//비디오 상세 페이지
+.video__view {
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+
+    .video__info {
+        .video__tittle {
+            padding-top: 10px;
+        }
+
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .id {
+
+                a {
+                    border: 1px solid var(--black300);
+                    padding: 10px 20px;
+                    border: 30px;
+                }
+            }
+
+            .count {
+                width: 50%;
+
+                span {
+                    border: 1px solid #000 !important;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    border: 30px;
+                    margin-left: 10px;
+                }
+            }
+
+            .desc {
+                border-top: 1px solid var(--black600);
+                white-space: pre-line;
+                padding-top: 40px;
+            }
+        }
+    }
+
+}
+
+.video__more {
+    padding: 10px;
+    border-top: 1px dashed #ccc;
+
+    button {
+        padding: 15px;
+        background-color: #ccc;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #e9e5e5;
+        border: 1px solid #ccc;
+
+    }
+}

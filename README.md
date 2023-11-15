@@ -17,14 +17,19 @@ CSS 또는 SASS를 사용하여 페이지를 스타일링하는 방법을 익힐
 
 ## 완성작 보기 미리보기 :
 
-## Getting Started with Create React App
-`npx create-react-app .`   
-`npm start`   
-Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-`npm run build`   
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.Your app is ready to be deployed!
+## 작업순서
+1. `npx create-react-app .`   
+현재 디렉토리에 React 앱을 생성합니다.   
+
+2. `npm start`   
+개발 모드에서 앱을 실행합니다.   
+브라우저에서 http://localhost:3000을 열어 확인할 수 있습니다.   
+
+3. `npm run build`   
+앱을 프로덕션 모드로 빌드합니다.   
+React를 프로덕션 모드로 올바르게 번들링하며, 최적화된 빌드를 생성합니다.   
+빌드된 파일은 build 폴더에 저장됩니다.   
+
 ## 라이브러리 설치
 1. react-router-dom   
 `npm install react-router-dom`   
@@ -53,3 +58,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 7. react-swiper   
 `npm install react-swiper`   
 설명: 스와이프 기능을 제공하는 React용 이미지 슬라이드 라이브러리입니다. 터치 이벤트를 지원하여 모바일에서의 사용에 적합합니다.   
+
+### Postman
+Postman은 API 개발을 위한 도구로, 사용자가 HTTP 요청을 만들고 테스트할 수 있게 해주는 플랫폼입니다. Postman을 사용하면 API 엔드포인트에 대한 다양한 요청을 간편하게 생성하고 관리할 수 있습니다. 또한, 컬렉션 기능을 통해 API 요청을 그룹화하고, 환경 변수를 활용하여 다양한 환경에서 일관된 테스트를 수행할 수 있습니다. 테스트 스크립트를 활용하여 API 응답을 검증하고, 협업 및 공유 기능을 통해 팀원들과 협업할 수 있습니다. 더불어, 자동화 및 CI/CD에 통합하여 개발 프로세스를 효율적으로 관리할 수 있습니다.     
+### Rapid API
+RapidAPI는 다양한 분야의 웹 API를 통합하고 제공하는 플랫폼으로, 개발자들이 쉽게 API를 찾아 사용하고 관리할 수 있게 도와주는 서비스입니다. API 마켓플레이스를 통해 다양한 기능과 데이터에 접근할 수 있으며, 간편한 통합된 개발 환경과 API 관리 도구를 제공하여 개발 효율성을 높입니다. 또한 코드 예제와 문서를 제공하여 개발자들이 신속하게 API를 활용할 수 있습니다. RapidAPI는 팀 협업을 지원하며, API 사용량을 추적하고 성능을 모니터링하는 기능을 제공합니다.   
+### 환경변수(configuration variables)
+.env 파일은 환경 변수를 저장하는 파일로, 주로 애플리케이션의 설정 정보나 민감한 데이터(예: API 키, 비밀번호)를 안전하게 보관하는 데 사용됩니다. 이 파일은 주로 로컬 개발 환경과 운영 환경 간에 설정을 구분하고, 중요 정보를 코드에서 분리하여 보안을 강화합니다. 키-값 쌍으로 이루어져 있으며, 주석을 통해 설명을 추가할 수 있습니다. .env 파일은 프로그램 언어나 프레임워크에서 읽혀져서 환경 변수를 설정하므로, 코드에 민감한 정보를 하드코딩하지 않고 안전하게 관리할 수 있습니다.   
