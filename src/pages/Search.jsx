@@ -33,7 +33,7 @@ const Search = () => {
     }
     return (
         <section id='searchPage'>
-            <h2>🎸{searchId}🎵</h2>
+            <h2>🎸 {searchId} 🎵</h2>
 
             <div className='video__inner'>
                 <VideoSearchs videos={videos} />

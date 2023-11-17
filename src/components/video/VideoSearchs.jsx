@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const VideoSearchs = ({ videos }) => {
+const VideoSearchs = ({ videos, layout }) => {
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         const year = date.getFullYear();
@@ -13,7 +13,7 @@ const VideoSearchs = ({ videos }) => {
     return (
         <>
             {videos.map((video, key) => (
-                <div className='video' key={key}>
+                <div className={`video ${layout}`} key={key}>
                     <div className="video__thumb play__icon">
                         <Link
                             to={`/video/${video.id.videoId}`}
@@ -29,7 +29,9 @@ const VideoSearchs = ({ videos }) => {
                             {video.snippet.description}
                         </p>
                         <div className='info'>
-                            <Link to={`/channel/${video.snippet.channelId}`} className='author'>{video.snippet.channelTitle}</Link>
+                            {layout !== 'channel' && (
+                                <Link to={`/channel/${video.snippet.channelId}`} className='author'>{video.snippet.channelTitle}</Link>
+                            )}
                             <span className='date'>{formatDate(video.snippet.publishedAt)}</span>
                         </div>
                     </div>
