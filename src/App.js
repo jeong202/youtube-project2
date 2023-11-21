@@ -1,20 +1,20 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Today from './pages/Today'
-import Youtuber from './pages/Youtuber'
-import Channels from './pages/Channels'
-import Header from './components/section/Header'
-import Footer from './components/section/Footer'
 import Main from './components/section/Main'
-import Search from './pages/Search'
-import Video from './pages/Video'
+
+const Home = lazy(() => import('./pages/Home'));
+const Today = lazy(() => import('./pages/Today'));
+const Youtuber = lazy(() => import('./pages/Youtuber'));
+const Channels = lazy(() => import('./pages/Channels'));
+const Search = lazy(() => import('./pages/Search'));
+const Video = lazy(() => import('./pages/Video'));
+
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Main>
+
+      <Suspense fallback={<Main />}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/today" element={<Today />} />
@@ -23,8 +23,8 @@ const App = () => {
           <Route path="/search/:searchId" element={<Search />} />
           <Route path="/video/:videoId" element={<Video />} />
         </Routes>
-      </Main>
-      <Footer />
+      </Suspense>
+
     </BrowserRouter>
   )
 }

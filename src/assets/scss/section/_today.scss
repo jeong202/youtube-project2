@@ -16,7 +16,7 @@
 
     .today__text {
         width: 60%;
-        height: 350px;
+        height: 400px;
         padding: 2rem;
 
         .today {
@@ -54,6 +54,32 @@
                 color: #ccc;
                 padding: 5px 20px;
             }
+        }
+    }
+}
+
+@media(max-width:950px) {
+    .today__text {
+        .title {
+            font-size: 1.0rem !important;
+        }
+
+        .desc {
+            font-size: 0.8rem !important;
+
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .today__text {
+        .title {
+            font-size: 0.8rem !important;
+        }
+
+        .desc {
+            font-size: 0.6rem !important;
+
         }
     }
 }

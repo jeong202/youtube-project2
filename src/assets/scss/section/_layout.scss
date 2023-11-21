@@ -7,6 +7,7 @@
     overflow-y: auto;
     z-index: 10000;
     border-right: 1px solid var(--black100);
+    background-color: var(--white);
 }
 
 #main {
@@ -37,11 +38,48 @@
 
 @media (max-width: 800px) {
     #header {
-        left: -250px;
+        left: -260px;
+        transition: left 0.3s;
+
+        &.show {
+            left: 0;
+
+        }
+
+        h1 {
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .header__menu {
+            margin-top: 90px;
+        }
+
+        &.active {
+            left: 0;
+        }
     }
 
     #main {
         padding-left: 0;
     }
 
+    #footer {
+        width: 100%;
+        margin-left: 0;
+    }
 }
+
+// @media (max-width: 800px) {
+//     #header {
+//         left: -260px;
+//         transition: all 0.3s ease-in;
+
+//       
+//     }
+
+//     #main {
+//         padding-left: 0;
+//     }
+// }

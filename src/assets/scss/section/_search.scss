@@ -16,3 +16,35 @@
         color: var(--black);
     }
 }
+
+@media (max-width: 800px) {
+    .search__inner {
+        display: flex;
+        justify-content: flex-end;
+
+        .search__input {
+            width: 50% !important;
+        }
+
+        .search__input::placeholder {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .search__inner {
+        display: flex;
+        justify-content: flex-end;
+        padding: 26px 10px 18px 40px;
+
+        .search__input {
+            width: 40% !important;
+            padding: 15px;
+        }
+
+        .search__input::placeholder {
+            font-size: 0.7rem;
+        }
+    }
+}

@@ -62,7 +62,25 @@
         padding: 40px;
     }
 
-    .channel__more {}
+    .channel__more {
+        padding: 10px;
+        border-top: 1px dashed #ccc;
+
+        button {
+            padding: 15px;
+            background-color: #ccc;
+            border-radius: 50px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e9e5e5;
+            border: 1px solid #ccc;
+
+        }
+    }
 }
 
 @media(max-width:500px) {
