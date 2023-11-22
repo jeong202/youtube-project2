@@ -42,14 +42,15 @@
         transition: left 0.3s;
 
         &.show {
+            position: fixed;
             left: 0;
+            top: 0;
 
         }
 
         h1 {
             position: fixed;
             left: 0;
-            top: 0;
         }
 
         .header__menu {
@@ -70,16 +71,3 @@
         margin-left: 0;
     }
 }
-
-// @media (max-width: 800px) {
-//     #header {
-//         left: -260px;
-//         transition: all 0.3s ease-in;
-
-//       
-//     }
-
-//     #main {
-//         padding-left: 0;
-//     }
-// }

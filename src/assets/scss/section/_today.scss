@@ -4,13 +4,14 @@
     display: flex;
     border: 1px solid #ccc;
     margin-bottom: 40px;
+    align-items: center;
 
     .today__thumb {
         width: 40%;
-        background-image: url(https://i.ytimg.com/vi/8XUMt44_7YQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBKiTps6eFLScG1RizhF-Y_inrWMQ);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
+
+        img {
+            display: block;
+        }
 
     }
 

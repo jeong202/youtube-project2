@@ -170,3 +170,54 @@ h2 {
     }
 
 }
+
+// video__slider
+.video__slider {
+    .video {
+        .video__thumb {
+
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .video__info {
+            background-color: rgba(255, 222, 222, 0.376);
+            padding: 14px;
+            border: 1px solid rgba(255, 222, 222, 0.694);
+
+            .title {
+                @include line-one;
+                font-size: 16px;
+            }
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                color: var(--black300);
+
+                .author {
+                    @include line-one;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    text-underline-position: under;
+
+                    &:hover {
+                        color: var(--black100);
+                    }
+                }
+
+                .date {
+                    white-space: nowrap;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}
