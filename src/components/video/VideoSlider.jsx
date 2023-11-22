@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -25,8 +25,13 @@ const VideoSlider = ({ name, videos, title }) => {
                     slidesPerView={1}
                     spaceBetween={20}
                     navigation={true}
-                    modules={[Navigation]}
+                    modules={[Autoplay, Navigation]}
+                    centeredSlides={true}
                     className={`mySwiper-${name}`}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
