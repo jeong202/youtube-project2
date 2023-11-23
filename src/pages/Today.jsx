@@ -1,6 +1,7 @@
 import React from 'react'
 import { todayText } from '../data/today'
 import Main from '../components/section/Main'
+import { Link } from 'react-router-dom'
 
 const Today = () => {
     return (
@@ -13,8 +14,12 @@ const Today = () => {
                 <h2>오늘의 추천 영상</h2>
                 {todayText.map((today, key) => (
                     <div className='today__inner' key={key}>
-                        <div className='today__thumb'>
-                            <img src={today.img} alt={today.author} />
+                        <div className='today__thumb play__icon'>
+                            <Link
+                                to={`/video/${today.videoId}`}
+                                style={{ backgroundImage: `url(${today.img})` }}
+                            >
+                            </Link>
                         </div>
                         <div className='today__text'>
                             <span className='today'>오늘의 영상!</span>
