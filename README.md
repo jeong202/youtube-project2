@@ -1,5 +1,5 @@
 # 리액트로 유튜브 사이트 만들기
-<img src="https://jeong202.github.io/youtube-project2/src/assets/img/cover.jpg">
+<img src="https://jeong202.github.io/youtube-project2/src/assets/img/coverimg.jpg">
 
 리액트와 유튜브 API를 이용하여 기타리스트의 기타연주와 관련된 사이트를 만들었습니다.      
 1. 리액트 기초 및 구성 요소 관리:   
