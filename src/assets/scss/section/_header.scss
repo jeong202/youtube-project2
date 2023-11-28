@@ -121,6 +121,11 @@
                 border: 1px solid var(--black400);
                 font-weight: 700;
 
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
                 &:hover {
                     background-color: rgba(235, 108, 108, 0.376);
                     color: var(--black);

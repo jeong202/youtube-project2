@@ -26,10 +26,10 @@ const VideoSlider = ({ name, videos, title }) => {
                     spaceBetween={20}
                     navigation={true}
                     modules={[Autoplay, Navigation]}
-                    centeredSlides={true}
+                    centeredSlides={false}
                     className={`mySwiper-${name}`}
                     autoplay={{
-                        delay: 2000,
+                        delay: 1800,
                         disableOnInteraction: false,
                     }}
                     breakpoints={{

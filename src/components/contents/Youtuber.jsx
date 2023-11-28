@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 
 const Youtuber = () => {
@@ -17,11 +17,11 @@ const Youtuber = () => {
             <h2>유튜버 모음</h2>
             <div className="youtuber__inner">
                 <Swiper
-                    slidesPerView={9}
+                    slidesPerView={7}
                     spaceBetween={20}
                     navigation={true}
-                    modules={[Autoplay, Navigation]}
-                    centeredSlides={true}
+                    modules={[Navigation, Autoplay]}
+                    centeredSlides={false}
                     className="mySwiper"
                     autoplay={{
                         delay: 2000,
